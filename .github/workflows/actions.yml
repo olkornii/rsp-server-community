@@ -46,3 +46,8 @@ jobs:
       with:
         working-directory: vscode
         run: npm run test
+    - name: Run NPM ui-tests
+      if: runner.os == 'Linux'
+      uses: GabrielBB/xvfb-action@v1.0
+      with:
+        run: npm run ui-test
