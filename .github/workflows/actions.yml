@@ -50,4 +50,5 @@ jobs:
       if: runner.os == 'Linux'
       uses: GabrielBB/xvfb-action@v1.4
       with:
+        working-directory: vscode
         run: npm run ui-test
